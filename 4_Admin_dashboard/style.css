@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+:root {
+    --close-nav: 15px
+}
+
+nav {
+    height: 100vh;
+    width: 250px;
+    border-right: 1px solid grey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+}
+
+nav .logo {
+    height: 90px;
+}
+
+nav .logo h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+}
+
+.menu-items {
+    margin-top: 40px;
+    height: calc(100% - 130px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-items ul li {
+    list-style: none;
+    padding: 0.8rem;
+    display: flex;
+    gap: 1.2rem;
+    cursor: pointer;
+    align-items: center;
+}
+
+.menu-items ul li i {
+    font-size: 1.2rem;
+}
+
+.menu-items ul li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.menu-items ul li:hover {
+    background-color: grey;
+    border-radius: 8px;
+
+}
+
+.logout-mode {
+    border-top: 1px solid grey;
+}
+
+.logout-mode h4 {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+
+.width {
+    width: calc(100% - 50px);
+    left: 60px;
+}
+
+.dashboard {
+    width: calc(100% - 250px);
+    height: 100vh;
+    position: relative;
+    left: 250px;
+    padding: 1rem;
+}
+
+.ham {
+    font-size: 2rem;
+    width: 20px;
+}
+
+.dashboard-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard-top input {
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+.dashboard .heading {
+    font-size: 2.3rem;
+    padding: 2rem 0;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box {
+    padding: 2rem 0;
+    border-radius: 10px;
+    background-color: rgb(186, 186, 186);
+    text-align: center;
+    width: calc(100% / 3 - 15px);
+    min-width: 250px;
+    margin-top: 1rem;
+}
+
+.box h5 {
+    font-size: 1.5rem;
+}
+
+.box span {
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+
+.table {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.table ul {
+    list-style-type: none;
+}
+
+.table ul li.h {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    white-space: nowrap;
+}
+
+.table ul li {
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+}
+
+@media (max-width:425px) {
+    .close {
+        width: 50px;
+        overflow: hidden;
+    }
+
+    .width {
+        width: calc(100% - 50px);
+        left: 60px;
+    }
+
+}
