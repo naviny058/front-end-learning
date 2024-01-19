@@ -1,0 +1,264 @@
+@import url('utility.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #4891ff;
+    --light-color: #f4f4f6;
+    --dark-color: #111;
+    --link-color: #afafaf;
+    --link-active: #2a6df3;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #c8c8c8;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+a:hover {
+    color: var(--link-active);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* Navbar */
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+nav .links ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav .links ul li i {
+    margin-right: 5px;
+}
+
+.hero {
+    margin-bottom: 1.5rem;
+}
+
+.hero .container {
+    background-image: url("images/hero-bg.png");
+    background-repeat: no-repeat;
+    height: 550px;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.hero h1 {
+    width: 70%;
+}
+
+.hero p {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+/* video section */
+.video {
+    background-color: var(--dark-color);
+    padding: 1rem 0;
+}
+
+.video h2 {
+    color: white;
+}
+
+.video a {
+    margin: 1.4rem 0;
+}
+
+/* review section  */
+section.review {
+    background-color: #292929;
+    padding: 1rem 0 6rem;
+
+}
+
+section.review h3 {
+    width: 70%;
+    margin-bottom: 4rem;
+    color: white;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.testimonials-grid .name {
+    font-weight: 700;
+    margin: 1.4rem 0 0.6rem;
+}
+
+/* footer  */
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 6rem 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-grid a img {
+    width: 100px;
+    margin-bottom: 1rem;
+}
+
+.footer-grid .card h4,
+.footer-grid .card p,
+.footer-grid .card input,
+.footer-grid .card a {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.footer-grid .card input {
+    padding: 0.6rem;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid grey;
+    font-size: 0.8rem;
+}
+
+.hamburger-button {
+    display: none;
+}
+
+.hamburger-button .hamburger-line {
+    width: 30px;
+    height: 3px;
+    background: #000000;
+    margin: 6px 0;
+}
+
+@media (width<650px) {
+    .text-xxl {
+        font-size: 2.2rem;
+    }
+
+    .text-xl {
+        font-size: 1.9rem;
+    }
+
+    .text-lg {
+        font-size: 1.2rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+
+    }
+
+    .hero-contents {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-contents h1,
+    .hero-contents p,
+    .hero-contents .btn {
+        width: 100%;
+    }
+
+    .hero-btns .btn-primary {
+        margin: 1rem 0;
+    }
+
+    .hero .container {
+        background-image: url("images/hero-bg-mobile.png");
+        background-position: bottom;
+        background-size: 350px 400px;
+        height: 770px;
+    }
+
+    section.review .container h3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hamburger-button {
+        display: block;
+        margin: 0 1rem;
+        z-index: 1;
+    }
+
+    .hamburger-button .hamburger-line {
+        width: 30px;
+        height: 3px;
+        background: #000000;
+        margin: 6px 0;
+    }
+
+    .links {
+        background-color: white;
+        position: fixed;
+        right: -300px;
+        top: 0;
+        width: 250px;
+        height: 100vh;
+        padding: 2rem 0;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        transition: right 0.3s ease-in-out;
+        padding: 1.6rem;
+    }
+
+    .dis {
+        right: 0px;
+    }
+
+    nav .links ul {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 3rem;
+    }
+
+    nav .links ul li {
+        text-align: left;
+    }
+}
+
+@media (width<480px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
