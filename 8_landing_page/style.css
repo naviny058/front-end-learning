@@ -25,7 +25,11 @@ body {
     width: 40%;
     position: relative;
 }
-
+.content {
+        position: absolute;
+        top: 55%;
+        left: 38%;
+    }
 .left .content {
     position: absolute;
        top: 55%;
