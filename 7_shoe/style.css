@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    /* height: 100%;
+    width: 100%; */
+    background-color: #d0d4d5;
+    font-family: sans-serif;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100px;
+}
+
+.nav-part1,
+.nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-part1 {
+    gap: 3rem;
+}
+
+.nav-part1,
+h2 {
+    justify-self: flex-end;
+}
+
+.nav-part2 {
+    margin-right: 1rem;
+    gap: 2.4rem;
+    font-size: 1.5rem;
+}
+
+.nav-part1 img {
+    height: 30px;
+    background-color: #d0d4d5;
+}
+
+.content {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    height: calc(100% - 100px);
+}
+
+.content .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0 0 0;
+}
+
+.left h5 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.left h1 {
+    margin-bottom: 50px;
+    font-size: 95px;
+    line-height: 90px;
+}
+
+.left p {
+    margin-bottom: 70px;
+    font-size: 18px;
+    width: 70%;
+
+}
+
+.left a {
+    padding: 18px 45px;
+    font-size: 16px;
+    border-radius: 100px;
+    border-top-left-radius: 0px;
+    background-color: black;
+    color: white;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.content .right {
+    width: 60%;
+    height: 100%;
+    padding: 100px;
+    position: relative;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.right::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    height: 540px;
+    width: 380px;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.card img {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 7%;
+}
+
+.card h4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: grey;
+    color: black;
+    padding: 18px 34px;
+    border-radius: 6px;
+
+}
+
+.card h5 {
+    padding: 18px 34px;
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+}
+
+@media (max-width:760px) {
+    .nav-part1 h4 {
+        display: none;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content .left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left p {
+        margin: 0 auto;
+    }
+
+    .left a {
+        margin: 2rem auto 0.2rem;
+
+    }
+
+    .right {
+        width: 200px;
+    }
+
+    .right .card {
+        height: 400px;
+        width: 280px;
+    }
+
+    .card img {
+        height: 300px;
+    }
+}
