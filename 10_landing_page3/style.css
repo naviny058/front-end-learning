@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url(utility.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: black;
+}
+
+ul.ul {
+    gap: 2rem;
+    list-style: none;
+
+}
+
+ul.ul li {
+    cursor: pointer;
+}
+
+.un {
+    display: none;
+}
+
+.hero {
+    background-color: black;
+}
+
+.hero-left {
+    padding: 2rem 0;
+    background-color: black;
+    color: white;
+}
+
+.hero-left h1 {
+    font-size: 4.9rem;
+    font-weight: 900;
+    line-height: 5rem;
+    width: 500px;
+    /* line-clamp: 3; */
+}
+
+.hero-left p {
+    font-size: 1rem;
+    margin: 1.2rem 0;
+    width: 400px;
+}
+
+.search-box {
+    padding: 0.6rem;
+    background-color: white;
+    width: 400px;
+    border: 4px solid grey;
+    border-radius: 10px;
+    margin: 3rem 0;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+}
+
+.statistics {
+    gap: 2rem;
+}
+
+.s1 .value {
+    font-size: 2rem;
+}
+
+.s1 .value span {
+    color: orange;
+}
+
+.s1 span {
+    color: grey;
+}
+
+.hero-right {
+    /* clip-path: circle(65.6% at 50% 66%); */
+    background-position: center;
+    box-sizing: border-box;
+
+}
+
+.hero-right img {
+    border: 8px solid grey;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    width: 480px;
+    height: 520px;
+}
+
+/*second page  */
+.brand-img img {
+    height: 110px;
+
+}
+
+.text-heading h6 {
+    color: orange;
+    font-size: 1.2rem;
+    margin: 1.2rem 0;
+}
+
+.text-heading h4 {
+    margin-bottom: 2rem;
+    color: rgb(7, 61, 92);
+    font-size: 1.8rem;
+}
+
+.card-wrapper {
+    flex-wrap: wrap;
+}
+
+.card {
+    padding: 1rem;
+}
+
+.card-wrapper .card img {
+    width: 200px;
+    margin-bottom: 0.7rem;
+}
+
+.price {
+    font-size: 1.3rem;
+}
+
+.price span {
+    color: orange;
+}
+
+.card h5 {
+    color: rgb(7, 61, 92);
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+.card p {
+    width: 200px;
+    margin: 1rem 0;
+}
+
+/* value  */
+.val-left {
+    padding: 1.6rem;
+}
+
+.val-left h1 {
+    color: orange;
+    font-size: 1.5rem;
+}
+
+.val-left h3 {
+    font-size: 1.3rem;
+    margin: 1.9rem 0;
+}
+
+.val-left p {
+    color: rgb(85, 85, 85);
+}
+
+
+ul.accordian {
+    width: 80%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 3rem 0;
+    list-style-type: none;
+}
+
+ul input[type='radio'] {
+    display: none;
+}
+
+ul.accordian li {
+    background-color: white;
+    padding: 1.6rem 2.1rem;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+ul.accordian li::before {
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: #000000;
+    content: "";
+    top: 0;
+    left: 0;
+}
+
+li label {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.4rem;
+    position: relative;
+}
+
+li label::before {
+    position: absolute;
+    right: 0;
+    content: "+";
+    transition: all ease 0.5s;
+}
+
+li .content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: all ease 0.5s;
+    text-align: left;
+}
+
+li .content>div {
+    overflow: hidden;
+}
+
+li input[type='radio']:checked+label+.content {
+    grid-template-rows: 1fr;
+}
+
+li input[type='radio']:checked+label::before {
+    content: "+";
+    transform: rotate(150deg);
+}
+
+/* get started  */
+.get-started {
+    padding: 0 auto;
+}
+
+.get {
+    background-color: #4161df;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+    max-width: 1440px;
+    border: 5px solid #4154a0;
+    border-radius: 10px;
+}
+
+.get h4 {
+    font-size: 1.9rem;
+}
+
+.get p {
+    margin: 2rem 0;
+}
+
+.get button {
+
+    border: 1px solid white;
+    color: white;
+}
+
+footer {
+    padding-bottom: 5rem;
+}
+
+footer .right h6 {
+    font-size: 1.4rem;
+    color: #4161df;
+    margin: 0.5rem 0;
+}
+
+footer .right p {
+    margin: 0.5rem 0;
+    font-size: .85rem;
+}
+
+.right ul {
+    list-style: none;
+    gap: 1rem;
+    margin-right: 1rem;
+    color: black;
+}
+
+@media (max-width:950px) {
+    html {
+        font-size: 15px;
+    }
+
+    .hero .container {
+        flex-direction: column;
+    }
+
+    .value .container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .contact .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:750px) {
+    header .container ul {
+        display: none;
+    }
+
+    .un {
+        margin-right: 6rem;
+        display: block;
+    }
+
+    footer .container {
+        flex-direction: column;
+        gap: 4rem;
+        text-align: center;
+    }
+}
