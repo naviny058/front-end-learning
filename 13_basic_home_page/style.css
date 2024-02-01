@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url(utility.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+nav {
+    max-width: 1440px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+h5,
+span {
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0.8rem;
+}
+
+h5:hover,
+.nav-part3 span:hover {
+    transform: scale(1.2);
+}
+
+main {
+    margin: 0 auto;
+    height: calc(100% - 200px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    font-size: 11rem;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+main img {
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    border-radius: 20px;
+}
+
+main .img1 {
+    transform: translate(-50%, -50%) rotate(-30deg)
+}
+
+main .img2 {
+    transform: translate(-50%, -50%) rotate(-20deg)
+}
+
+main .img3 {
+    transform: translate(-50%, -50%) rotate(-10deg)
+}
+
+footer {
+    margin: 0 auto;
+    max-width: 1440px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
