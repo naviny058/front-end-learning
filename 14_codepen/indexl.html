@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="left">
+        <div class="code-box html-area">
+            <div class="heading">Html</div>
+            <textarea onkeypress='run()' id="html" name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="code-box css-area">
+            <div class="heading">Css</div>
+            <textarea onkeypress='run()' id="css" name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="code-box js-area">
+            <div class="heading">js</div>
+            <textarea id="js" name="" id="" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+    <div class="right">
+        <div class="heading">output</div>
+        <iframe class="output"></iframe>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

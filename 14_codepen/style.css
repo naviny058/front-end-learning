@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.left,
+.right {
+    width: 50%;
+    height: 100%;
+}
+
+.left {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.code-box {
+    height: 30%;
+    width: 100%;
+}
+
+.code-box textarea {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(26, 22, 22);
+    font-size: 1.2rem;
+    color: white;
+    padding: 0.4rem;
+    border: none;
+    outline: none;
+
+}
+
+.heading {
+    background-color: black;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.right {
+    color: white;
+}
+
+.output {
+    color: black;
+    height: 100%;
+    width: 100%;
+}
