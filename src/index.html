@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="container mx-auto flex items-center justify-between py-4 px-4 bg-orange-500 sm:bg-white">
+            <div class="logo">
+                <a class="text-white text-3xl font-bold sm:text-orange-500 z-10" href="#">Food<span
+                        class="text-black">man</span></a>
+            </div>
+            <ul class="big sm:flex sm:gap-4 sm:text-xl hidden">
+                <li><a class="hover:text-yellow-500" href="#">Home</a></li>
+                <li><a class="hover:text-yellow-500" href="#second_page">Special</a></li>
+                <li><a class="hover:text-yellow-500" href="#">Chef</a></li>
+                <li><a class="hover:text-yellow-500" href="#cheif">Clients</a></li>
+                <li><a class="hover:text-yellow-500" href="#contact">Contact us</a></li>
+            </ul>
+            <!-- mobile links  -->
+            <ul
+                class="mobile_menu sm:hidden transition-all duration-500 ease-linear translate-y-[-150%] right-0 absolute mt-[350px] py-10 bg-white w-full text-center">
+                <li class="mb-2"><a class="text-lg font-semibold text-orange-500 " href="#">Home</a></li>
+                <li class="my-2"><a class="text-lg font-semibold text-orange-500 " href="#second_page">Special</a></li>
+                <li class="my-2"><a class="text-lg font-semibold text-orange-500 " href="#cheif">Chef</a></li>
+                <li class="my-2"><a class="text-lg font-semibold text-orange-500 " href="#">Clients</a></li>
+                <li class="my-2"><a class="text-lg  font-semibold text-orange-500 " href="#contact">Contact us</a></li>
+            </ul>
+            <button class="cart hidden sm:block rounded-full">
+                <i class="ri-shopping-bag-fill text-3xl"></i>
+            </button>
+            <div class="block sm:hidden text-3xl font-bold">
+                <i class="open-menu ri-menu-3-line cursor-pointer"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero px-10 mb-32 mt-20">
+        <div class="container mx-auto grid sm:grid-cols-2 gap-4 sm:text-left">
+            <div class="h-left col-span-1 flex flex-col items-center justify-center">
+                <div class="headin font-bold self-start text-5xl my-4">
+                    <h1 class="">Meet, Eat &</h1>
+                    <h1 class="">Enjoy The</h1>
+                    <h1 class=" text-yellow-500">True Taste.</h1>
+                </div>
+                <p class="text-xl to-gray-400 my-2">
+                    Discover the true essence of culinary delight as you meet, eat, and savor the authentic flavors that
+                    define our passion for food.
+                </p>
+                <button class="bg-orange-400 text-white mt-4 self-start px-5 py-3 rounded-lg text-xl">Get
+                    Started</button>
+            </div>
+            <div class="h-right col-span-1">
+                <img src="../assets/header.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="second_page px-10">
+        <div class="container mx-auto">
+            <div class="heading text-center">
+                <h1 class="text-4xl text-black font-bold py-8">
+                    Our Special Dish
+                </h1>
+                <p class="text-2xl text-gray-500 max-w-[600px] mx-auto">
+                    Each dish promises an unforgettable dining experience, blending innovation with tradition to delight
+                    your senses.
+                </p>
+            </div>
+            <div class="bottom_card_wrapper grid sm:grid-cols-3 gap-8 my-20">
+                <div class="card text-center p-2 hover:shadow-lg hover:scale-105 rounded-2xl">
+                    <img class="max-w-[200px] mx-auto" src="../assets/special-2.png" alt="">
+                    <h3 class="text-2xl font-bold my-4">
+                        Chicken Veg Stir-Fry
+                    </h3>
+                    <p class="text-lg w-full my-4">
+                        Tender chicken strips wok-tossed with a colorful array of fresh vegetables in a flavorful blend
+                        of spices and sauces.
+                    </p>
+                    <div class="rating my-2">
+                        <i class="ri-star-fill text-yellow-500"></i>
+                        <i class="ri-star-fill text-yellow-500"></i>
+                        <i class="ri-star-fill text-yellow-500"></i>
+                        <i class="ri-star-fill text-yellow-500"></i>
+                        <i class="ri-star-fill text-yellow-500"></i>
+                    </div>
+                    <div class="bottom flex mt-4 items-center gap-2 justify-center">
+                        <div class="price font-bold">$12.50</div>
+                        <button class="py-2 px-4 bg-orange-600 rounded-lg text-white">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card text-center p-2 hover:shadow-lg hover:scale-105 rounded-2xl">
+                    <img class="max-w-[200px] mx-auto" src="../assets/special-1.png" alt="">
+                    <h3 class="text-2xl font-bold my-4">
+                        Chicken Veg Pasta
+                    </h3>
+                    <p class="text-lg w-full my-4">
+
+                        Al dente pasta tossed with chicken strips and a mix of vibrant vegetables in a creamy garlic
+                        herb sauce, offering a delightful pasta experience.
+                    </p>
+                    <div class="rating my-2">
+                        <i class="ri-star-fill text-yellow-500"></i>
+                        <i class="ri-star-fill text-yellow-500"></i>
+                        <i class="ri-star-fill text-yellow-500"></i>
+                        <i class="ri-star-fill text-yellow-500"></i>
+                        <i class="ri-star-fill text-yellow-500"></i>
+                    </div>
+                    <div class="bottom flex mt-4 items-center gap-2 justify-center">
+                        <div class="price font-bold">$12.50</div>
+                        <button class="py-2 px-4 bg-orange-600 rounded-lg text-white">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card text-center p-2 hover:shadow-lg hover:scale-105 rounded-2xl">
+                    <img class="max-w-[200px] mx-auto" src="../assets/special-3.png" alt="">
+                    <h3 class="text-2xl font-bold my-4">
+                        Chicken Veg Curry
+                    </h3>
+                    <p class="text-lg w-full my-4">
+                        Diced chicken simmered in aromatic curry sauce with mixed veggies like potatoes, cauliflower,
+                        and beans for a hearty, flavorful dish.
+                    </p>
+                    <div class="rating my-2">
+                        <i class="ri-star-fill text-yellow-500"></i>
+                        <i class="ri-star-fill text-yellow-500"></i>
+                        <i class="ri-star-fill text-yellow-500"></i>
+                        <i class="ri-star-fill text-yellow-500"></i>
+                        <i class="ri-star-fill text-yellow-500"></i>
+                    </div>
+                    <div class="bottom flex mt-4 items-center gap-2 justify-center">
+                        <div class="price font-bold">$12.50</div>
+                        <button class="py-2 px-4 bg-orange-600 rounded-lg text-white">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="hero mb-32 px-10 mt-20">
+        <div class="container mx-auto grid sm:grid-cols-2 gap-4 text-left">
+            <div class="h-right col-span-1">
+                <img src="../assets/explore.png" alt="">
+            </div>
+            <div class="h-left col-span-1 flex flex-col items-center justify-center">
+                <div class="headin font-bold self-start text-5xl my-4">
+                    <h1 class="">
+                        We Serve Healthy &</h1>
+                    <h1 class=""> Tasty Food</h1>
+                </div>
+                <p class="text-xl to-gray-400 my-2">
+                    Indulge guilt-free with our commitment to serving wholesome and delicious meals. Explore a menu
+                    curated to balance taste and nutrition, ensuring every bite is both satisfying and nourishing.
+                </p>
+                <button class="bg-orange-400 text-white mt-4 self-start px-5 py-3 rounded-lg text-xl">Explore
+                    Story</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page3 px-10">
+        <div class="container mx-auto">
+            <div class="card_wrapper sm:grid-cols-3 grid gap-6">
+                <div class="card p-8 rounded-3xl border">
+                    <span class="bg-green-500 rounded-lg p-4 my-4 shadow-md">
+                        <i class="ri-bowl-fill text-xl text-white"></i>
+                    </span>
+                    <h5 class="font-bold text-2xl mt-8 mb-4">
+                        Order Your Food
+                    </h5>
+                    <p class="text-lg my-4 text-gray-400">
+
+                        Seamlessly place your food orders online with just a few clicks. Enjoy convenience and
+                        efficiency as you select from our diverse menu of delectable dishes.
+                    </p>
+                    <a href="" class="text-orange-600 text-lg">
+                        Read more <span><i class="ri-arrow-right-line"></i></span>
+                    </a>
+                </div>
+
+                <div class="card p-8 rounded-3xl border">
+                    <span class="bg-red-500 rounded-lg p-4 my-4 shadow-md">
+                        <i class="ri-truck-fill text-xl text-white"></i>
+                    </span>
+                    <h5 class="font-bold text-2xl mt-8 mb-4">
+                        Pick Your Food
+                    </h5>
+                    <p class="text-lg my-4 text-gray-400">
+
+                        Customize your dining experience by choosing from a tantalizing array of options. For savory,
+                        sweet, or in between craving, find the perfect meal to satisfy your appetite.
+                    </p>
+                    <a href="" class="text-orange-600 text-lg">
+                        Read more <span><i class="ri-arrow-right-line"></i></span>
+                    </a>
+                </div>
+
+                <div class="card p-8 rounded-3xl border">
+                    <span class="bg-blue-500 rounded-lg p-4 my-4 shadow-md">
+                        <i class="ri-star-smile-fill text-xl text-white"></i>
+                    </span>
+                    <h5 class="font-bold text-2xl mt-8 mb-4">
+                        Enjoy Your Food
+                    </h5>
+                    <p class="text-lg my-4 text-gray-400">
+
+                        Sit back, relax, and savor the flavors as your meticulously prepared meal arrives. Delight in
+                        the deliciousness of every bite, knowing that your satisfaction is our top priority.
+                    </p>
+                    <a href="" class="text-orange-600 text-lg">
+                        Read more <span><i class="ri-arrow-right-line"></i></span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="cheif" class="cheif mb-32 mt-20 py-10 px-10">
+        <div class="container mx-auto grid sm:grid-cols-2 gap-4 text-left">
+            <div class="h-left col-span-1 flex flex-col items-center justify-center">
+                <div class="headin font-bold self-start text-5xl my-4">
+                    <h1 class=""> Cooked By The Best Chefs In The World
+                    </h1>
+                </div>
+                <p class="text-xl to-gray-400 my-2">
+                    Experience culinary excellence crafted by master chefs from around the globe. Our team of culinary
+                    virtuosos brings together expertise, innovation, and passion to create unforgettable dining
+                    experiences that redefine gastronomy.
+                </p>
+                <div class="check self-start my-4">
+                    <div class="flex items-center">
+                        <i class="ri-checkbox-fill text-green-500 text-2xl"></i>
+                        <p>Savour culinary brilliance from master
+                            chefs
+                            worldwide.</p>
+                    </div>
+                    <div class="flex items-center ">
+                        <i class="ri-checkbox-fill text-red-500 text-2xl"></i>
+                        <p>Experience innovative creations with
+                            attention to
+                            detail.</p>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="ri-checkbox-fill text-blue-500 text-2xl"></i>
+                        <p>Enjoy dishes crafted with an unwavering
+                            passion
+                            for
+                            perfection.</p>
+                    </div>
+                </div>
+                <button class="bg-orange-400 text-white mt-4 self-start px-5 py-3 rounded-lg text-xl">Get
+                    Started</button>
+            </div>
+            <div class="h-right col-span-1">
+                <img class="mx-auto my-auto  max-w-[400px] bg-orange-600 rounded-full z-[-1]" src="../assets/chef.png"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <!-- // review todo -->
+
+    <footer id="contact" class="contact pb-32 px-10">
+        <div class="container mx-auto">
+            <div class="grid sm:grid-cols-4">
+                <div>
+                    <h6 class="text-orange-500 my-4 font-bold text-3xl">Food<span class="text-black">man</span> </h6>
+                    <p class="text-gray-500 text-lg">Embark on a gastronomic journey with FoodMan, where every bite
+                        tells a
+                        story and every dish is
+                        crafted to perfection
+                    </p>
+                </div>
+                <ul>
+                    <li class="font-bold text-3xl">Product</li>
+                    <li class="my-2"><a href="#" class="text-xl text-gray-600 hover:text-orange-600">Menu</a></li>
+                    <li class="my-2"><a href="#" class="text-xl text-gray-600 hover:text-orange-600">Special</a></li>
+                    <li class="my-2"><a href="#" class="text-xl text-gray-600 hover:text-orange-600">Meal Deals</a></li>
+                    <li class="my-2"><a href="#" class="text-xl text-gray-600 hover:text-orange-600">Catering
+                            Options</a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li class="font-bold text-3xl">Information</li>
+                    <li class="my-2"><a href="#" class="text-xl text-gray-600 hover:text-orange-600">About Us</a></li>
+                    <li class="my-2"><a href="#" class="text-xl text-gray-600 hover:text-orange-600">Contact us</a></li>
+                    <li class="my-2"><a href="#" class="text-xl text-gray-600 hover:text-orange-600">
+                            Information
+                            Service</a></li>
+                </ul>
+                <ul>
+                    <li class="font-bold text-3xl">Company</li>
+                    <li class="my-2"><a href="#" class="text-xl text-gray-600 hover:text-orange-600">Our Story</a></li>
+                    <li class="my-2"><a href="#" class="text-xl text-gray-600 hover:text-orange-600">Carrer</a></li>
+                    <li class="my-2"><a href="#" class="text-xl text-gray-600 hover:text-orange-600">Terms of
+                            Service</a></li>
+                    <li class="my-2"><a href="#" class="text-xl text-gray-600 hover:text-orange-600">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-11 text-gray-600">Copyright © 2024 Navin.dev . All rights reserved.</div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
